@@ -1,0 +1,115 @@
+@import "../variable/variable";
+
+/*study part start*/ 
+#study{
+    padding: 80px 0;
+    .section_heading{
+        padding-bottom: 60px;
+    }
+}
+.study_section{
+    position: relative;
+    &::after{
+        content: "";
+        height: 100%;
+        width: 13%;
+        background: #f2f2f2;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    &::before{
+        content: "";
+        height: 100%;
+        width: 13%;
+        background: #f2f2f2;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .study_main{
+        .info{
+            padding: 90px 0;
+            h6{
+                font-size: 14px;
+                color: $button_color;
+                font-family: $roboto;
+                font-weight: $roboto_bold;
+            }
+            h1{
+                font-size: 30px;
+                color: $common_color;
+                font-family: $monserat;
+                font-weight: $monserat_bold;
+                padding-top: 15px;
+                padding-bottom: 20px;
+                span{
+                    font-weight: $monserat_thin;
+                }
+            }
+            .dag{
+                height: 1px;
+                width: 100%;
+                background: $pragraph_color;
+            }
+            p{ 
+                font-size: 16px;
+                color: $pragraph_color;
+                font-family: $roboto;
+                font-weight: $roboto_light;
+                padding-top: 25px;
+                padding-bottom: 40px;
+                padding-right: 64px;
+            }
+            .btn_main{
+                display: flex;
+                gap: 10px;
+                .button{
+                    height: 50px;
+                    width: 50px;
+                    background-color: #f2f2f2;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: .3s;
+                    cursor: pointer;
+                    &:hover{
+                        background: $button_color;
+                        color: $white_color;
+                       
+                    }
+                }
+            }
+            
+        }
+        .image{
+            position: relative;
+            padding-left: 20px;
+            img{
+                height: 480px;
+            }
+            a{
+                padding: 20px 40px;
+                border-radius: 50px;
+                background: $button_color;
+                font-size: 16px;
+                color: $white_color;
+                font-family: $roboto;
+                font-weight: $roboto_bold;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                transform: translate(-10px , -10px);
+                box-shadow:30px $white_color;
+                svg{
+                    width: 20px;
+                    height: 20px;
+                }
+                
+            }
+        }
+    }
+}
+
+/*study part end*/

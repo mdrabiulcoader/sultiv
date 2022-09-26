@@ -1,0 +1,47 @@
+@import "../variable/variable";
+
+/* seles part start*/ 
+#seles{
+    padding: 130px 0;
+    background: linear-gradient(45deg,#4c4c4c ,#c9c9c9);
+}
+.seles_info{
+    p{
+        font-size: 14px;
+        color: $white_color;
+        font-family: $roboto;
+        font-weight: $roboto_bold;
+        padding-bottom: 25px;
+    }
+    h2{
+        color: $white_color;
+        font-size: 60px;
+        font-family: $monserat;
+        font-weight: $monserat_bold;
+       span{
+        font-weight: $monserat_thin;
+       }
+    }
+    h1{
+        font-size: 80px;
+        color:$button_color ;
+        font-family: $monserat;
+        font-weight: $monserat_thin;
+        padding-bottom: 50px;
+        padding-top: 35px;
+    }
+    a{
+        font-size: 16px;
+        color: $white_color;
+        font-family: $roboto;
+        font-weight: $roboto_regular;
+        padding: 20px 40px;
+        border-radius: 50px;
+        border: 1px solid $pragraph_color;
+        transition:all linear .3s;
+        &:hover{
+            background: $button_color;
+        }
+    }
+}
+/* seles part end*/

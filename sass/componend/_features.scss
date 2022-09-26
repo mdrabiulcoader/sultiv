@@ -1,0 +1,155 @@
+@import "../variable/variable";
+
+/* features part start*/ 
+#features{
+    padding: 118px;
+    position: relative;
+    z-index: 1;
+    &::after{
+        position: absolute;
+        content: "";
+        height: 100%;
+        width: 60%;
+        right: 0;
+        top: 0;
+        background: #fafafa;
+        z-index: -1;
+    }
+}
+.features_main{
+    .info{
+        padding-left: 20px;
+      
+        h6{
+            font-size: 14px;
+            color: $button_color;
+            font-family: $roboto;
+            font-weight: $roboto_bold;
+        }
+        h1{
+            font-size: 60px;
+            color: $common_color;
+            font-family: $monserat;
+            font-weight: $monserat_bold;
+            span{
+                font-weight: $monserat_thin;
+            }
+            padding-bottom: 60px;
+        }
+        .logo{
+            display: flex;
+            gap: 23px;
+            justify-content: center;
+            padding-bottom: 10px;
+            padding-bottom: 50px;
+           .item{
+            .icon{
+                height: 80px;
+                width: 80px;
+                background: $white_color;
+                border-radius: 50%;
+                border: 3px solid #f2f2f2;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+           }
+           .text{
+            h2{
+                font-size: 22px;
+                color: $common_color;
+                font-family: $monserat;
+                font-weight: $monserat_bold;
+                span{
+                    font-weight: $monserat_thin;
+                }
+            }
+            p{
+                font-size: 15px;
+                color: $pragraph_color;
+                font-family: $roboto;
+                font-weight: $roboto_regular;
+                line-height: 24px;
+            }
+           }
+        }
+        
+    }
+    .image{
+        padding-right: 40px;
+        img{
+            height: 520px !important;
+        }
+    }
+}
+/* features part end*/ 
+
+/* newsletter part start */ 
+#newsletter{
+    padding-bottom: 120px;
+    border-bottom: 3px solid $button_color;
+}
+.newsletter_main{
+   
+    .item{
+        background: $common_color;
+        padding: 80px;
+        .info{
+            h6{
+                font-size: 14px;
+                color: $button_color;
+                font-family: $roboto;
+                font-weight: $roboto_bold;
+            }
+            h1{
+                font-size: 60px;
+                color: $white_color;
+                font-family: $monserat;
+                font-weight: $monserat_bold;
+                span{
+                font-weight: $monserat_thin;
+                }   
+                padding-top: 25px; 
+                padding-bottom: 38px;
+            }
+            .email{
+                position: relative;
+                input{
+                    width: 500px;
+                    height: 60px;
+                    border-radius: 50px;
+                    padding-left: 10px;
+                    background: #073765;
+                    border: none;
+                    color: #7795b1;
+                    font-size: 16px;
+                    font-family: $roboto;
+                    font-weight: $roboto_regular;
+                }
+                .email_btn{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    transform: translateX(-87px);
+                    width: 190px;
+                    height: 60px;
+                    border-radius: 50px;
+                    background: $button_color;
+                    color: $white_color;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-family: $roboto;
+                    font-weight: $roboto_bold;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .image{
+        img{
+            height: 433px;
+        }
+    }
+}
+/* newsletter part end */ 

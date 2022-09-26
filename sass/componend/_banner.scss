@@ -1,0 +1,81 @@
+@import "../variable/variable";
+
+/*Banner part start*/ 
+#banner{
+    padding: 80px 0;
+    background: #f4f4f4;
+   .container_main{
+    .banner_info{
+       
+        .info{
+           
+            h1{
+                color: $heading_color;
+                font-size: 100px;
+                font-family: $monserat;
+                font-weight: $monserat_bold;
+                span{
+                    color: #e74d58;
+                    font-weight: $monserat_thin;
+                }
+            }
+            p{
+                font-size: 20px;
+                color: #5b7996;
+                font-family: $roboto;
+                font-weight: $roboto_regular;
+            }
+           .counsoling{
+            display: flex;
+            gap: 15px;
+            color: #999999;
+            font-size: 15px;
+           } 
+        }
+        .email{
+            position: relative;
+            input{
+                height: 80px;
+                width: 590px;
+                border-radius: 50px;
+                border: none;
+                padding-left: 15px;
+                font-size: 15px;
+                font-family: $roboto;
+                font-weight: $roboto_regular;
+                background: $white_color;
+                
+            }
+            .email_btn{
+                height: 60px;
+                width: 265px;
+                border-radius: 50px;
+                background: $button_color;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                top: 10px;
+                right: 387px;
+                // transform: translate(-388px, 10px)
+                a{
+                    color: $white_color;
+                    font-size: 16px;
+                    font-family: $roboto;
+                    font-weight: $roboto_bold;
+                }
+            }
+        }
+    }
+    .banner_image{
+        .image{
+            img{
+                height: 590px;
+                width: 680px;
+            }
+        }
+    }
+   }
+}
+
+/*Banner part end*/ 

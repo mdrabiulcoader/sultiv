@@ -1,0 +1,32 @@
+@import "../variable/variable";
+
+
+/* counte part start*/ 
+.counte_main{
+    background-color: $common_color;
+    padding: 55px 0;
+    .counte{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .counte_text{
+            padding-left:10px;
+            h1{
+                font-size: 48px;
+                color: $white_color;
+                font-family: $monserat;
+                font-weight: $monserat_bold;
+                span{
+                    font-size: 15px;
+                }
+            }
+            p{
+                font-size: 16px;
+                color: #728ca5;
+                font-family: $roboto;
+                font-weight: $roboto_medium;
+            }
+        }
+    }
+}
+/* counte part end*/ 

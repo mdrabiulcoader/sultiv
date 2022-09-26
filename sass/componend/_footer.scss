@@ -1,0 +1,147 @@
+@import "../variable/variable";
+
+/* footer part start*/ 
+#footer{
+    padding: 100px;
+    background:$common_color;
+}
+.footer_main{
+    .main{
+        .text{
+            padding: 30px 79px 30px 0;
+            p{
+                font-size: 15px;
+                color: $pragraph_color;
+                font-family: $roboto;
+                font-weight: $roboto_regular;
+                line-height: 24px;
+            }
+        }
+        .call{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            .call_numr_main{
+                a{
+                    font-size: 24px;
+                    color: $white_color;
+                    font-family: $roboto;
+                    font-weight: $roboto_bold;
+
+                }
+            }
+            .call_free{
+                a{
+                    font-size: 16px;
+                    color: #678cb1;
+                    font-family: $roboto;
+                    font-weight: $roboto_regular;
+                }
+            }
+        }
+    }
+    .item{
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        h1{
+            font-size: 20px;
+            font-family: $monserat;
+            font-weight: $monserat_bold;
+            color: $white_color;
+        }
+        a{
+            font-size: 15px;
+            color: $pragraph_color;
+            font-family: $roboto;
+            font-weight: $roboto_regular;
+            transition: .3s;
+            &:hover{
+                color: $white_color;
+            }
+        }
+    }
+.item_main{
+    h2{
+        color: $white_color;
+        font-size: 20px;
+        font-family: $monserat;
+        font-weight: $monserat_bold;
+    }
+    .address_main{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        .address{
+            display: flex;
+            gap: 20px;
+            .text{
+                a{
+                    color:$pragraph_color;
+                }
+            }
+            .rabiul_icon{
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                border: 3px solid $pragraph_color;
+                background: transparent;
+                color: $pragraph_color;
+                transition: .3s;
+                &:hover{
+                    color: $white_color;
+                    border: none;
+                    background: #17519d;
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}
+}
+/*footer copyright part start*/ 
+.footer_copyright{
+    background: #00264c;
+    padding: 30px 0;
+}
+.footer_copyright_main{
+    display: flex;
+    justify-content: space-between;
+    .copyright{
+       p{
+        font-size: 16px;
+        color: $white_color;
+        font-family: $roboto;
+        font-weight: $roboto_bold;
+        transition: .3s;
+        &:hover{
+            color: $pragraph_color;
+        }
+       }
+    }
+    .about{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        .text{
+            a{
+                font-size: 16px;
+                color: $white_color;
+                font-family: $roboto;
+                font-weight: $roboto_regular;
+                transition: .3s;
+                &:hover{
+                    color: $pragraph_color;
+                }
+            }
+        }
+        .dag{
+            height: 50%;
+            width: 2px;
+            background: $pragraph_color;
+        }
+    }
+    
+}
+/*footer copyright part start*/ 
+

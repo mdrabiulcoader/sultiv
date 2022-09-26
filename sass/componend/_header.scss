@@ -1,0 +1,100 @@
+@import "../variable/variable";
+
+/*header part start*/ 
+#header{
+    padding: 20px 0;
+    background: #e74d58;
+}
+.main_header{
+    display: flex;
+    position: relative;
+   .main{
+    display: flex;
+    gap: 10px;
+    .lagnguage{
+        .dropdwon{
+            position: relative;
+            z-index: 1;
+            &:hover{
+                .dropdown_ul{
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+            button{
+                background: transparent;
+                border: none;
+                color: #fff;
+                font-size: 16px;
+                svg{
+                    height: 15px;
+                    width: 15px;
+                }
+            }
+            .dropdown_ul{
+                background: $common_color;
+                padding: 5px 5px;
+                position: absolute;
+                top: 0;
+                right: 0;
+                transform: translate(39px, 23px);
+                opacity: 0;
+                visibility: hidden;
+                transition: .5s;
+                z-index: 0;
+               
+                li{
+                    padding: 5px 30px;
+                    font-size: 15px;
+                    color: $white_color;
+                    transition: .3s;
+                    &:hover{
+                        background:rgba(128, 128, 128, 0.39);
+                    }
+                }
+            }
+        }
+       
+  
+    }
+    .email{
+        display: flex;
+        padding-left: 40px;
+        color: #fff;
+        font-size: 16px;
+        .text{
+            a{
+                color: #fff;
+                font-size: 16px;
+                padding-left: 5px;
+            }
+        }
+        
+    }
+   }
+   .header_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    right: 0px;
+    top: 0;
+    transform: translateY(-20px);
+    .logo:nth-child(4){
+        padding-right: 50px;
+    }
+    
+    .header_btn{
+        height: 66px;
+        width: 200px;
+        background: $common_color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 15px; 
+    }
+   }
+}
+/*header part end*/ 

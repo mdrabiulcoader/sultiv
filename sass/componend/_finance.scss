@@ -1,0 +1,56 @@
+@import "../variable/variable";
+
+/* finance part start*/
+#finance{
+    padding: 80px 0;
+    background: #fcfcfc;
+    position: relative;
+    z-index: 1;
+    &::after{
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 40%;
+        background: #f3f3f3;
+        right: 0;
+        top: 0;
+        z-index: -1;
+    }
+    
+} 
+.finance_main{
+    background: $white_color;
+    padding: 50px 0;
+    .item{
+       
+        display: flex;
+        padding: 30px 0;
+        .info{
+            padding-left: 30px; 
+            }
+            h2{
+                font-size: 22px;
+                color: $common_color;
+                font-family: $monserat;
+                font-weight: $monserat_bold;
+                padding-bottom: 20px;
+            }
+            p{
+                font-size: 16px;
+                color: $pragraph_color;
+                font-family: $roboto;
+                font-weight: $roboto_regular;
+                padding-right: 60px;
+                line-height: 15px;
+            }
+            .logo{
+                .logo_numbr{
+                    color: #afafaf;
+                    font-size: 45px;
+                    font-family: $monserat;
+                    font-weight: $monserat_thin;
+                }
+        }
+    }
+}
+/* finance part end*/ 
